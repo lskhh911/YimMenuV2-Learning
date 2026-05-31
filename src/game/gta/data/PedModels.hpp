@@ -2,8 +2,24 @@
 
 namespace YimMenu
 {
+	// g_PedModels - 所有可生成的 Ped 模型名称列表
+	// 前缀说明:
+	//   a_c_    = 动物 (Animals)
+	//   a_f_    = 成年女性 (Adult Female)
+	//   a_m_    = 成年男性 (Adult Male)
+	//   cs_     = 过场角色 (Cutscene)
+	//   csb_    = 过场角色 B (Cutscene B)
+	//   g_      = 帮派成员 (Gangs)
+	//   hc_     = 抢劫任务角色 (Heist Crew)
+	//   ig_     = 游戏内角色 (In-Game)
+	//   mp_     = 多人模式 (Multiplayer)
+	//   p_      = 主角 (Protagonists)
+	//   player_ = 玩家模型 (Player Models)
+	//   s_      = 故事模式 NPC (Story Mode)
+	//   u_      = 唯一/特殊角色 (Unique)
 	constexpr auto g_PedModels = std::to_array({
-        "a_c_boar",
+		// ===== Animals (动物) =====
+	    "a_c_boar",
 	    "a_c_boar_02",
 	    "a_c_cat_01",
 	    "a_c_cat_02",
@@ -46,6 +62,7 @@ namespace YimMenu
 	    "a_c_shepherd",
 	    "a_c_stingray",
 	    "a_c_westy",
+	 // ===== Adult Female (成年女性) =====
 	    "a_f_m_beach_01",
 	    "a_f_m_bevhills_01",
 	    "a_f_m_bevhills_02",
@@ -130,6 +147,7 @@ namespace YimMenu
 	    "a_f_y_vinewood_03",
 	    "a_f_y_vinewood_04",
 	    "a_f_y_yoga_01",
+	 // ===== Adult Male (成年男性) =====
 	    "a_m_m_acult_01",
 	    "a_m_m_afriamer_01",
 	    "a_m_m_bankrobber_01",
@@ -269,6 +287,7 @@ namespace YimMenu
 	    "a_m_y_vinewood_03",
 	    "a_m_y_vinewood_04",
 	    "a_m_y_yoga_01",
+	 // ===== Cutscene Characters (过场角色) =====
 	    "cs_amandatownley",
 	    "cs_amandatownley_02",
 	    "cs_andreas",
@@ -360,6 +379,7 @@ namespace YimMenu
 	    "cs_tracydisanto",
 	    "cs_wade",
 	    "cs_zimbor",
+	 // ===== Cutscene Characters B (过场角色 B) =====
 	    "csb_abigail",
 	    "csb_agatha",
 	    "csb_agent",
@@ -492,6 +512,7 @@ namespace YimMenu
 	    "csb_weiss",
 	    "csb_wendy",
 	    "csb_yusufamir",
+	 // ===== Gang Members (帮派成员) =====
 	    "g_f_importexport_01",
 	    "g_f_m_fooliganz_01",
 	    "g_f_m_undeadmage",
@@ -554,9 +575,11 @@ namespace YimMenu
 	    "g_m_y_salvagoon_03",
 	    "g_m_y_strpunk_01",
 	    "g_m_y_strpunk_02",
+	 // ===== Heist Crew (抢劫任务角色) =====
 	    "hc_driver",
 	    "hc_gunman",
 	    "hc_hacker",
+	 // ===== In-Game Characters (游戏内角色) =====
 	    "ig_abigail",
 	    "ig_acidlabcook",
 	    "ig_agatha",
@@ -815,6 +838,7 @@ namespace YimMenu
 	    "ig_yusufamir",
 	    "ig_zimbor",
 	    "ig_zombie_dj_01",
+	 // ===== Multiplayer (多人模式) =====
 	    "mp_f_bennymech_01",
 	    "mp_f_boatstaff_01",
 	    "mp_f_cardesign_01",
@@ -856,11 +880,13 @@ namespace YimMenu
 	    "mp_m_weapwork_01",
 	    "mp_m_weed_01",
 	    "mp_s_m_armoured_01",
+	 // ===== Protagonists & Player (主角/玩家模型) =====
 	    "p_franklin_02",
 	    "p_michael_02",
 	    "player_one",
 	    "player_two",
 	    "player_zero",
+	 // ===== Story Mode NPCs (故事模式 NPC) =====
 	    "s_f_m_autoshop_01",
 	    "s_f_m_fembarber",
 	    "s_f_m_maid_01",
@@ -1016,6 +1042,7 @@ namespace YimMenu
 	    // "slod_human", you don't want to spawn these
 	    // "slod_large_quadped",
 	    // "slod_small_quadped",
+	 // ===== Unique Characters (唯一/特殊角色) =====
 	    "u_f_m_casinocash_01",
 	    "u_f_m_casinoshop_01",
 	    "u_f_m_corpse_01",
@@ -1112,5 +1139,6 @@ namespace YimMenu
 	    "u_m_y_tattoo_01",
 	    "u_m_y_ushi",
 	    "u_m_y_zombie_01"
-    });
+	 // ===== End of Ped Models =====
+	   });
 }
